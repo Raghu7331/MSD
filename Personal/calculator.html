@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60vh;
+      margin: 0;
+      background-color: #e5e9ef;
+    }
+
+    .box {
+      padding: 40px 20px 20px;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      background-color: #151313e9;
+      box-shadow: 0 8px 12px rgba(1, 6, 16, 0.264);
+      display: grid;
+      grid-template-columns: repeat(10, 50px);
+      gap: 5px;
+    }
+
+    .box > div {
+      background-color: #fafafa;
+      padding: 10px;
+      text-align: center;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .box > div[data-yellow="true"] {
+      background-color: #f0c000;
+      color: black;
+    }
+
+    .box > div:not([data-yellow="true"]):hover {
+      background-color: #f0c000;
+      color: black;
+    }
+
+    .box > div[data-yellow="true"]:hover {
+      background-color: #fafafa;
+      color: black;
+    }
+
+    .box > div:nth-child(47) {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div>(</div>
+    <div>)</div>
+    <div>mc</div>
+    <div>m+</div>
+    <div>m-</div>
+    <div>mr</div>
+    <div data-yellow="true">AC</div>
+    <div data-yellow="true">+/-</div>
+    <div data-yellow="true">%</div>
+    <div data-yellow="true">/</div>
+    <div>2<sup>nd</sup></div>
+    <div>X<sup>2</sup></div>
+    <div>X<sup>3</sup></div>
+    <div>X<sup>y</sup></div>
+    <div>e<sup>x</sup></div>
+    <div>10<sup>x</sup></div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div data-yellow="true">X</div>
+    <div>1/x</div>
+    <div>2√x</div>
+    <div>3√x</div>
+    <div>y√x</div>
+    <div>In</div>
+    <div>log<sub>10</sub></div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div data-yellow="true">-</div>
+    <div>X!</div>
+    <div>Sin</div>
+    <div>Cos</div>
+    <div>Tan</div>
+    <div>e</div>
+    <div>EE</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div data-yellow="true">+</div>
+    <div>Rad</div>
+    <div>Sinh</div>
+    <div>Cosh</div>
+    <div>Tanh</div>
+    <div>π</div>
+    <div>Rand</div>
+    <div>0</div>
+    <div>.</div>
+    <div data-yellow="true">=</div>
+  </div>
+</body>
+</html>
